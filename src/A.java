@@ -1,4 +1,3 @@
-package Serializable_examples;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,6 +17,7 @@ class Test {
             File f = new File("A.ser");
             FileInputStream fis = new FileInputStream(f);
             ObjectInputStream ois = new ObjectInputStream(fis);
+            
             A a = (A) ois.readObject();
             System.out.println(a.i);
             System.out.println(a.j);
